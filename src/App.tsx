@@ -107,7 +107,7 @@ const App: FC<IApp> = (props) => {
         Bid
         <ul>
           {orderBookData && orderBookData?.bids.map((bid, i) => {
-            return <li>{bid[0] - bid[1]} </li>
+            return <li>{`${bid[0]} -> ${bid[1]}`} </li>
           })
           }
         </ul>
@@ -117,7 +117,7 @@ const App: FC<IApp> = (props) => {
         Asks
         <ul>
           {orderBookData && orderBookData?.asks.map((ask, i) => {
-            return <li>{ask[0] - ask[1]} </li>
+            return <li>{`${ask[0]} -> ${ask[1]}`} </li>
           })
           }
         </ul>
